@@ -234,6 +234,7 @@ static Shortcut shortcuts[] = {
 	{ TERMMOD,              XK_plus,        zoom,           {.f = +1} },
 	{ TERMMOD,              XK_underscore,  zoom,           {.f = -1} },
 	{ TERMMOD,              XK_parenright,  zoomreset,      {.f = 0} },
+  { TERMMOD,              XK_Return,      newterm,        {.i =  0} },
 };
 
 /*
