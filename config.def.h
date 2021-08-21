@@ -9,7 +9,7 @@ static char *font = "SF Mono:pixelsize=18:antialias=true:autohint=true";
 /* Spare fonts */
 static char *font2[] = {
 	"FiraCode Nerd Font:pixelsize=18:antialias=true:autohint=true",
-/*	"Hack Nerd Font Mono:pixelsize=11:antialias=true:autohint=true", */
+	"Noto Color Emoji:pixelsize=18:antialias=true:autohint=true",
 };
 
 static int borderpx = 2;
@@ -233,8 +233,9 @@ static Shortcut shortcuts[] = {
 	{ ShiftMask,            XK_Page_Down,   kscrolldown,    {.i = -1} },
 	{ TERMMOD,              XK_plus,        zoom,           {.f = +1} },
 	{ TERMMOD,              XK_underscore,  zoom,           {.f = -1} },
-	{ TERMMOD,              XK_parenright,  zoomreset,      {.f = 0} },
+	{ TERMMOD,              XK_parenright,  zoomreset,      {.f =  0} },
   { TERMMOD,              XK_Return,      newterm,        {.i =  0} },
+	{ MODKEY,               XK_l,           copyurl,        {.i =  0} },
 };
 
 /*
